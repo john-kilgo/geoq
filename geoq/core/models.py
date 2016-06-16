@@ -326,8 +326,10 @@ class Job(GeoQBase, Assignment):
         create base layer object that can override leaflet base OSM map
         """
 
-        obj = {}
-        if len(self.base_layer) > 0:
+        obj =  { }
+        obj["SRID"] = 4326;
+
+	if len(self.base_layer) > 0:
             obj["layers"] = [self.base_layer]
 
         return obj
