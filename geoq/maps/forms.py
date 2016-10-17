@@ -26,7 +26,7 @@ class FeatureTypeForm(StyledModelForm):
 
         self.helper = FormHelper()
         self.helper.layout = Layout(
-            Fieldset(None, 'name', 'type', 'category', 'order', 'properties'),
+            Fieldset(None, 'name', 'type', 'category', 'order', 'icon', 'properties'),
             HTML('<hr/><p><a id="property-toggle" class="btn" data-toggle="collapse" data-target="#property-list">Edit Properties &raquo;</a></p>'),
             HTML('<div id="property-list" class="collapse">'),
             HTML('<table id="property-table" class="table"><tr><th>Property</th><th>Value</th></tr>'),
