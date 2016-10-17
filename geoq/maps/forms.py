@@ -46,7 +46,7 @@ class FeatureTypeForm(StyledModelForm):
             HTML('<tr><td class="key">opacity</td><td><input type="number" min="0" max="1" step="0.1" class="value" id="opacity" placeholder="Enter a value from 0 to 1 in increments of 0.1." ></td></tr>'),
             HTML('<tr><td class="key">weight</td><td><input type="number" min="1" max="6" step="1" class="value" id="weight" placeholder="Enter a value from 1 to 6 in increments of 1."></td></tr>'),
             HTML('<tr><td class="key">fillOpacity</td><td><input type="number" class="value" id="fillOpacity"></td></tr>'),
-            HTML('<tr><td class="key">iconUrl</td><td><input type="text" class="value" id="iconUrl"></td></tr>'),
+            HTML('<tr><td class="key">iconUrl</td><td><input type="text" class="value" id="iconUrl"><input type="file" class="value" id="iconImport"></td></tr>'),
             HTML('</table>'),
             HTML('<p><a id="style-ok" class="btn" >OK</a><a id="style-cancel" class="btn" style="margin-left: 50px;" >Cancel</a>'),
             HTML('<a id="style-add" class="btn" style="margin-left: 50px;" >Add Style</a></p>'),
